@@ -1,0 +1,1127 @@
+/******************/
+/*****ALGEMEEN*****/
+/******************/
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+	--black: black;
+	--white: white;
+}
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+
+/*********************/
+/*****FONT-FACES******/
+/*********************/
+
+@font-face {
+    font-family: 'NeueHaasMedium' ;
+    src: url(./fonts/NeueHaasDisplayMediu.ttf);
+}
+
+@font-face {
+    font-family: 'NeueHaasLight' ;
+    src: url(./fonts/NeueHaasDisplayLight.ttf);
+}
+
+@font-face {
+    font-family: 'Format';
+    src: url(./fonts/Format_1452\ kopie\ 2.otf);
+}
+
+/********************/
+/*****A-LINKS********/
+/********************/
+
+.footer-link {
+    cursor: pointer;
+}
+
+.header-link {
+    text-decoration: none;
+    color: var(--black);
+    cursor: pointer;
+}
+
+.header-link:hover {
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+    color: var(--white);
+    background-color: var(--black);
+    padding: 0 .25rem;
+	margin: 0 -.25rem;
+}
+
+.header-link:active {
+    color: transparent;
+}
+
+.link-max-titel {
+    text-decoration: none;
+    color: var(--black);
+    cursor: pointer;
+}
+
+.contact-button:hover {
+    transform: scale(1.002);
+    padding-left: 6em;
+    background-color: #CFCFCF;
+    transition: ease-in-out .2s;
+}
+
+
+.button-my-work:hover {
+    padding-left: 6em;
+    background-color: #CFCFCF;
+    transition: ease-in-out .2s;
+}
+
+
+.image-hover {
+    background-image: url(./images/about-me-foto.png);
+    height: 300px;
+}
+
+/******************************/
+/*****MEDIA QUERIES 1200px*****/
+/******************************/
+
+/*
+@media screen and (max-width: 1100px) {
+    .container-about-me-2 h1 {
+     font-size: 42px !important;
+   }
+ }
+
+ @media screen and (max-width: 1100px) {
+    .container-about-me-2 p {
+     font-size: 20px !important;
+   }
+ }
+
+ @media screen and (max-width: 1100px) {
+    .contact-button {
+     padding: 8px 48px 8px 48px!important;
+     font-size: 20px !important;
+   }
+ }
+
+
+/******************************/
+/***** MEDIA QUERIES PHONE *****/
+/******************************/
+
+@media screen and (max-width: 430px) {
+    header {
+     padding: 1em 1em !important;
+   }
+ }
+
+@media screen and (max-width: 430px) {
+    main {
+     margin-left: 1em !important;
+     margin-right: 1em !important;
+   }
+ }
+
+ 
+@media screen and (max-width: 430px) {
+    .scrolling-text .scrolling-text-content {
+    font-size: 64px !important;
+   }
+ }
+
+@media screen and (max-width: 430px) {
+    .container {
+    height: 15vh !important;
+    width: 100% !important;
+   }
+ }
+
+@media screen and (max-width: 430px) {
+    .container-about-me-test {
+    display: flex !important;
+    flex-direction: column !important;
+   }
+ }
+
+@media screen and (max-width: 430px) {
+    .container-about-me-1 h2 {
+    font-size: 20px !important;
+   }
+ }
+
+ @media screen and (max-width: 430px) {
+    .container-about-me-1 img {
+    width: 100% !important;
+   }
+ }
+
+ @media screen and (max-width: 430px) {
+    .container-about-me-2 h1 {
+    margin-top: 16px;
+    font-size: 32px !important;
+   }
+ }
+
+
+ @media screen and (max-width: 430px) {
+    .container-about-me-2 p {
+    font-size: 16px !important;
+   }
+ }
+
+ @media screen and (max-width: 430px) {
+    .contact-button {
+    padding: 10px 32px 10px 32px !important;
+    font-size: 20px !important;
+    width: 100% !important;
+   }
+ }
+
+ @media screen and (max-width: 430px) {
+    .contact-button img {
+        width: 64px !important;
+   }
+ }
+
+ @media screen and (max-width: 430px) {
+    .about-me-header {
+    font-size: 20px !important;
+   }
+ }
+
+ @media screen and (max-width: 430px) {
+    .container-mockup {
+        display: flex !important;
+        flex-direction: column !important;
+    }
+ }
+
+ @media screen and (max-width: 430px) {
+    .image {
+        width: 100vw !important;
+    }
+ }
+
+ @media screen and (max-width: 430px) {
+    .mockup-text {
+        width: 100% !important;
+        margin-bottom: 2em !important;
+    }
+ }
+
+ @media screen and (max-width: 430px) {
+    .button-my-work {
+        padding: 10px 32px 10px 32px !important;
+        font-size: 20px !important;
+        width: 100% !important;
+    }
+ }
+
+ @media screen and (max-width: 430px) {
+    .button-my-work img {
+        width: 64px !important;
+    }
+ }
+
+ @media screen and (max-width: 430px) {
+    .flex-container {
+        display: flex !important;
+        flex-direction: column !important;
+        margin-left: 1em !important;
+    }
+ }
+
+ @media screen and (max-width: 430px) {
+    footer {
+        height: 100% !important;
+    }
+ }
+
+ @media screen and (max-width: 430px) {
+    .container-1, .container-2, .container-3, .container-4  {
+        width: 100% !important;
+    }
+ }
+
+ @media screen and (max-width: 430px) {
+    .container-4  {
+        margin-bottom: 3em !important;
+    }
+ }
+
+
+/******************************/
+/*****MEDIA QUERIES IPAD ******/
+/******************************/
+
+@media screen and (max-width: 1024px) {
+    header {
+     padding: 1em 2em !important;
+   }
+ }
+
+@media screen and (max-width: 1024px) {
+    main {
+     margin-left: 2em !important;
+     margin-right: 2em !important;
+   }
+ }
+
+ @media screen and (max-width: 1024px) {
+    .scrolling-text .scrolling-text-content {
+    font-size: 80px !important;
+   }
+ }
+
+@media screen and (max-width: 1024px) {
+    .container {
+    height: 20vh !important;
+    width: 100% !important;
+   }
+ }
+
+ @media screen and (max-width: 1024px) {
+    .container-about-me-1 h2 {
+    font-size: 24px !important;
+   }
+ }
+
+
+ @media screen and (max-width: 1024px) {
+    .container-about-me-2 h1 {
+    margin-top: 16px;
+    font-size: 48px !important;
+   }
+ }
+
+
+ @media screen and (max-width: 1024px) {
+    .container-about-me-2 p {
+    font-size: 20px !important;
+   }
+ }
+
+ @media screen and (max-width: 1024px) {
+    .contact-button {
+    padding: 10px 32px 10px 32px !important;
+    font-size: 20px !important;
+   }
+ }
+
+ @media screen and (max-width: 1024px) {
+    .button-my-work {
+        padding: 10px 32px 10px 32px !important;
+        font-size: 20px !important;
+    }
+ }
+
+ 
+
+/********************/
+/*****NAVIGATION*****/
+/********************/
+
+header {
+    padding: 1em 6em;    
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-color: white;
+}
+
+.navigation {
+    font-family: 'NeueHaasLight';   
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 30px;
+    color: #000;
+}
+
+.nav-text-container {
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+
+}
+
+
+
+/********************/
+/******* MAIN *******/
+/********************/
+
+/******* BANNER ANIMATION *******/
+
+
+main {
+    overflow: hidden;
+    margin-left: 6em;
+    margin-right: 6em;
+}
+
+.container-all {
+    position: relative;
+    margin-top: 8em;
+}
+
+.container {    
+    font-family: 'Format';
+    background-color: #000;
+    overflow: hidden;
+    width: 100%;
+    overflow: hidden;
+}
+
+.scrolling-text {
+    display: inline-block;
+    transition: transform 0.5s cubic-bezier(0.23, 0.36, 0.28, 0.83);
+    will-change: transform;
+    backface-visibility: hidden;
+}
+
+.scrolling-text .scrolling-text-content {
+    color: var(--white);
+    font-size: 120px;
+    white-space: nowrap;
+    transition: transform 0.5s cubic-bezier(0.23, 0.36, 0.28, 0.83);
+    line-height: 1em;
+    margin: 50px 0;
+}
+
+
+
+
+.container-about-me-test {
+    display: flex;
+    margin-top: 64px;
+    border-top: 2px solid #CFCFCF;
+    border-bottom: 2px solid #CFCFCF;
+    padding-bottom: 64px;
+    gap: 2em;
+}
+
+.container-about-me-1 img {
+    height: auto;
+    width: 40vw;
+}
+
+.container-about-me-1 h2 {
+    font-family: 'NeueHaasLight';   
+    font-weight: 400;
+    font-size: 24px;
+    text-decoration: underline;
+    margin-top: 64px;
+    margin-bottom: 48px;
+}
+
+.container-about-me-2 {
+    align-content: center;
+    height: auto;
+  
+}
+
+.container-about-me-2 h1 {
+    font-size: 64px;
+    font-weight: 900;
+    font-family: 'NeueHaasMedium' ;
+}
+
+.container-about-me-2 p {
+    font-size: 24px;
+    letter-spacing: 0.4px;
+    margin-top: 16px;
+    font-family: 'NeueHaasLight';
+    line-height: 1.5;
+}
+
+.contact-button {
+    cursor: pointer;
+    font-family: 'NeueHaasLight';  
+    white-space: normal;
+    font-size: 24px;
+    padding-left: 96px;
+    padding-right: 96px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    background: #ddd;
+    border: 3px outset white;
+    color: #000;
+    transition: .1s ease-out;
+    font-size: 24px;
+    margin-top: 24px;
+}
+
+
+
+
+
+
+.container-about-me {
+    margin-top: 64px;
+    border-top: 2px solid #CFCFCF;
+    border-bottom: 2px solid #CFCFCF;
+    padding-bottom: 64px;
+}
+
+.about-me-header {
+    font-family: 'NeueHaasLight';   
+    font-weight: 400;
+    font-size: 24px;
+    text-decoration: underline;
+    margin-top: 64px;
+    margin-bottom: 48px;
+}
+
+.about-me-img-container img {
+    width: 100%;
+    height: auto;
+}
+
+.about-me-img-container {
+    width: 40%;
+    height: auto;
+}
+
+.about-me-text {
+    font-family: 'NeueHaasLight';  
+    position: relative;
+    margin-left: 2em;
+    width: 60%;
+}
+
+.about-me-text-max {
+    font-size: 64px;
+    font-weight: 900;
+    font-family: 'NeueHaasMedium' ;
+    background-color: var(--white);
+}
+
+.about-me-text p {
+    font-size: 24px;
+    letter-spacing: 0.4px;
+    margin-top: 16px;
+}
+
+
+.about-me-button {
+    cursor: pointer;
+    font-family: 'NeueHaasLight';  
+    white-space: normal;
+    font-size: 24px;
+    padding-left: 1.5em;
+    padding-right: 4em;
+    padding-top: 0.5em ;
+    padding-bottom: 0.5em;
+    background: #ddd;
+    border: 3px outset white;
+    color: #000;
+    transition: .1s ease-out;
+    display: flex;
+    align-items: center;
+}
+
+.button-link-about-me {
+    text-decoration: none;
+}
+
+
+.container-my-work {
+    padding-bottom: 64px;
+}
+
+
+.container-mockup {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+}
+
+.mockup-text h3 {
+    font-family: 'NeueHaasMedium'; 
+    font-size: 16px;
+    margin-top: 16px;
+}
+
+.mockup-text p {
+    font-family: 'NeueHaasLight'; 
+    font-size: 16px;
+    margin-top: 8px;
+}
+
+.mockup-text img {
+    background-color: #f2f2f2;
+}
+
+.mockup-text {
+    position: relative;
+    width: 50%;
+  }
+  
+  .image {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    transition: .5s ease;
+    backface-visibility: hidden;
+  }
+
+  .image-beeldtaal {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    transition: .5s ease;
+    backface-visibility: hidden;
+  }
+  
+  .middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    align-items: center;
+  }
+  
+  .mockup-text:hover .image {
+    opacity: 0.3;
+  }
+  
+  .mockup-text:hover .middle {
+    opacity: 1;
+  }
+  
+  .text {
+    font-family: 'NeueHaasLight'; 
+    cursor: pointer;
+    background-color: #000;
+    color: white;
+    font-size: 16px;
+    padding: 16px 32px;
+  }
+  
+  .button-my-work {
+    cursor: pointer;
+    font-family: 'NeueHaasLight';  
+    white-space: normal;
+    font-size: 24px;
+    padding-left: 1.5em;
+    padding-right: 4em;
+    padding-top: 0.5em ;
+    padding-bottom: 0.5em;
+    background: #ddd;
+    border: 3px outset white;
+    color: #000;
+    transition: .1s ease-out;
+    align-items: center;
+  }
+
+
+.button-work-container {
+    display: flex;
+}
+
+.link-my-work {
+    text-decoration: none;
+    margin-top: 48px;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+/**********************/
+/******* FOOTER *******/
+/**********************/
+
+.moving-text-link {
+    text-decoration: none;
+}
+
+.scrolling_text {
+    font-family: 'NeueHaasLight';  
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    white-space: nowrap;
+    background-color: #000;
+}
+
+.text-1 {
+    font-size: 64px;
+    font-weight: 700;
+}
+
+.text-1 span {
+    margin: 0 40px;
+    color: #fff;
+}
+
+@keyframes animate_text {
+    from {
+      transform: translate3d(0, 0, 0);
+    }
+    to {
+      transform: translate3d(-100%, 0, 0);
+    }
+}
+
+.text-1 {
+    font-size: 80px;
+    font-weight: 700;
+    color: #3A1240;
+    animation: animate_text 50s linear infinite; /* The animation property */
+}
+
+.footer-home {
+    background-color: #000;
+    width: 100%;
+    color: #fff;
+    height: 496px;
+    margin-top: 128px;
+}
+
+
+.flex-container {
+    margin-top: 64px;
+    margin-left: 6em;
+    margin-right: 6em;
+    display: flex;
+    flex-direction: row;
+    gap: 3em;
+}
+
+.container-1 {
+    width: 40%;
+}
+
+.container-1 h3 {
+    font-family: 'NeueHaasLight';  
+    margin-top: 28px;
+}
+
+.container-2 {
+    width: 20%;
+}
+
+.container-2 h3, .container-3 h3, .container-4 h3 {
+    font-family: 'NeueHaasMedium';  
+    margin-bottom: 28px;
+}
+
+.container-2 p, .container-3 p, .container-4 p {
+    font-family: 'NeueHaasLight';  
+    margin-top: 24px;
+}
+
+.container-2 a, .container-3 a, .container-4 a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.container-3 {
+    width: 20%;
+}
+
+.container-4 {
+    width: 20%;
+}
+
+
+
+
+
+
+/********************************/
+/******* MIJN WERK PAGINA *******/
+/********************************/
+
+
+
+/********************/
+/******* MAIN *******/
+/********************/
+
+.main-werk {
+    background-color: var(--white) !important;
+    margin-top: 8em;
+}
+
+.h1-werk {
+    font-family: 'NeueHaasLight';  
+    font-size: 64px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 64px;
+    transform: translate3d(0px, 0%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+    opacity: 1;
+    transform-style: preserve-3d;
+}
+
+.container-mockup {
+    margin-top: 2em;
+
+}
+
+.container-werk-animatie {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin-bottom: 64px;
+  }
+  
+  .fade-in {
+    opacity: 0;
+    animation: fadeIn 1.5s ease forwards;
+    font-family: 'NeueHaasLight';  
+    font-size: 64px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+
+
+/********************************/
+/******* OVER MIJ PAGINA *******/
+/********************************/
+
+
+.main-overmij {
+    background-color: var(--white) !important;
+    margin-top: 8em;
+    margin-left: 6em;
+    margin-right: 6em;
+}
+
+.over-mij-container {
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+    margin-top: 64px;
+}
+
+.over-mij-container img {
+    width: 100%;
+}
+
+.over-mij-arrow {
+    display: flex;
+    flex-direction: row;
+}
+
+.over-mij-arrow h2 {
+    font-size: 48px;
+    font-weight: 900;
+    font-family: 'NeueHaasLight' ;
+}
+
+
+
+.over-mij-container p {
+    font-size: 16px;
+    letter-spacing: 0.4px;
+    margin-top: 16px;
+    font-family: 'NeueHaasLight';
+}
+
+
+/********************/
+/***** NOISE ********/
+/********************/
+
+
+/* Noise wrapper die zorgt voor het effect */
+.noise-wrap {
+  opacity: .6;
+  mix-blend-mode: darken;
+  pointer-events: none;
+  z-index: -1;
+  background-color: #fff;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  position: fixed;
+  inset: 0;
+  overflow: hidden;
+}
+
+/* Noise effect zelf */
+.noise-wrap-noise {
+  animation: 250ms steps(10, end) 0s infinite alternate-reverse none running noise-animation;
+  opacity: 1;
+  background-image: url('./images/noise.png'); /* Vervang met het pad naar jouw afbeelding */
+  background-position: 0 0;
+  background-size: 300px 300px; /* Pas dit aan om de grootte van de pixels te wijzigen */
+  flex-flow: column;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  position: absolute;
+}
+
+/* Keyframes voor de noise animatie */
+@keyframes noise-animation {
+  0% {
+    background-position: 0% 0%;
+  }
+  10% {
+    background-position: -5% -5%;
+  }
+  20% {
+    background-position: -10% 5%;
+  }
+  30% {
+    background-position: 5% -10%;
+  }
+  40% {
+    background-position: -5% 15%;
+  }
+  50% {
+    background-position: -10% 5%;
+  }
+  60% {
+    background-position: 5% 5%;
+  }
+  70% {
+    background-position: 0% 10%;
+  }
+  80% {
+    background-position: -5% -5%;
+  }
+  90% {
+    background-position: 10% 5%;
+  }
+}
+
+/* Media query voor kleinere schermen (optioneel) */
+@media screen and (max-width: 991px) {
+  .noise-wrap-noise {
+    background-attachment: fixed;
+  }
+}
+
+/********************************/
+/******* DETAIL-PAGINA ***********/
+/********************************/
+
+
+
+.scrollable-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%; /* Past de breedte aan */
+  max-width: 900px; /* Maximale breedte van de container */
+  height: 600px; /* Hoogte van het venster */
+  overflow-y: scroll; /* Maakt verticale scroll mogelijk */
+}
+
+/* Afbeelding aanpassen aan de container */
+.scrollable-container img {
+  width: 100%; /* Laat de afbeelding de breedte van de container volgen */
+  height: auto; /* Houdt de verhouding van de afbeelding */
+}
+
+.typografie-header h1 {
+  font-family: 'NeueHaasMedium' ;
+  font-size: 32px !important;
+}
+
+.scrollable-row {
+  display: flex;
+  flex-direction: row;
+  gap: 2em;
+}
+  
+.scrollable-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.scrollable-col h1 {
+  font-family: 'NeueHaasMedium' ;
+  margin-bottom: 4px;
+  font-size: 16px;
+}
+
+.scrollable-col p {
+  font-family: 'NeueHaasLight' ;
+}
+
+.scrollable-col-text  {
+  display: flex;
+  flex-direction: column;
+  margin-top: 8em;
+  gap: 2em;
+}
+
+
+.scrollable-col-text h1 {
+  font-family: 'NeueHaasMedium' ;
+  margin-bottom: 4px;
+  font-size: 16px;
+}
+
+
+.scrollable-col-text p {
+  font-family: 'NeueHaasLight' ;
+}
+
+.proces-container {
+  display: flex;
+  flex-direction: row;
+  margin-top: 4em;
+}
+
+.proces-container div img {
+  width: 33%;
+}
+
+.proces-container-2 {
+  display: flex;
+  flex-direction: row;
+  margin-top: 4em;
+}
+
+.proces-container-2 div img {
+  width: 20%;
+}
+
+.proces-container-tekst {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 50%;
+}
+
+
+.proces-container-tekst h2 {
+  font-family: 'NeueHaasMedium' ;
+  margin-bottom: 4px;
+  font-size: 16px;
+}
+
+.proces-container-tekst p {
+  font-family: 'NeueHaasLight' ;
+}
+
+.scrollable-container-1 {
+  display: flex;
+  flex-direction: row;
+  margin-top: 8em;
+  gap: 2em;
+}
+
+.scrollable-container-1 h2 {
+  font-family: 'NeueHaasMedium';
+}
+
+
+/********************************/
+/******* CONTACT-PAGINA ***********/
+/********************************/
+
+
+.main-contact {
+  margin-top: 8em;
+}
+
+.contact-social-container h3 {
+  font-family: 'NeueHaasMedium' ;
+
+}
+
+.contact-social-container a {
+  color: black;
+  font-family: 'NeueHaasLight' ;
+}
+
+.container-contact-animatie {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+
+/********************************/
+/******* GRIDENKLEUR-PAGINA ***********/
+/********************************/
+
+
+.proces-container-grid {
+  justify-content: start;
+  display: flex;
+  flex-direction: row;
+  margin-top: 4em;
+  align-items: flex-start; /* Zorgt ervoor dat alles in de container bovenaan staat */
+}
+
+.proces-container-grid div {
+  gap: 12px;
+  display: flex; /* Maakt de div een flex-container */
+  flex-direction: row; /* Zorgt ervoor dat inhoud binnen de div gestapeld wordt */
+  align-items: flex-start; /* Zorgt ervoor dat items bovenaan uitlijnen */
+}
+
+.proces-container-grid div img {
+  width: 33%;
+  margin: 0; /* Verwijdert eventuele marges rond de afbeeldingen */
+}
+
+
+
+/********************************/
+/******* BEELDTAAL ***********/
+/********************************/
+
+
+.beeldtaal-poster-container div div img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 6em;
+  width: 50%;
+}
+
+
+
